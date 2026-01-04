@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+body {
+  user-select: none;
+  background-color: #212121;
+  color: #f0f0f0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --color-primary: #212121;
+  --color-secondary: #303030;
+  --bg-tertiary: #414141;
+  --color-accent: #ffb400;
+  --color-accent-hover: #cc9200;
+
+  --color-surface: #424242;
+
+  --color-text: #e0e6f0;
+  --color-muted: #8c9bb3;
+
+  --color-border: #2c3244;
+
+  --color-nav_link: rgba(255, 255, 255, 0.75);
+  --color-nav_link-hover: rgba(255, 255, 255, 1);
+
+  --bg-scrim: #0d0d0d80;
+  --bg-elevated-primary: #303030;
+  --bg-elevated-secondary: #181818;
+  /* status */
+  --bg-status-warning: #4a2206;
+  --bg-status-error: #4d100e;
+  /* border */
+  --border-default: #ffffff26;
+  --border-heavy: #fff3;
+  --border-light: #ffffff0d;
+  --border-status-warning: #4a2206;
+  --border-status-error: #4d100e;
+  /* text */
+  --text-primary: #fff;
+  --text-secondary: #f3f3f3;
+  --text-tertiary: #afafaf;
+  --text-inverted: #0d0d0d;
+  --text-inverted-static: #fff;
+  --text-accent: #66b5ff;
+  --text-status-warning: #ff9e6c;
+  --text-status-error: #ff8583;
+  /* icon */
+  --icon-primary: #e8e8e8;
+  --icon-secondary: #cdcdcd;
+  --icon-tertiary: #afafaf;
+  --icon-inverted: #0d0d0d;
+  --icon-inverted-static: #fff;
+  --icon-accent: #66b5ff;
+  --icon-status-warning: #ff9e6c;
+  --icon-status-error: #ff8583;
+  --interactive-bg-primary-default: #fff;
+  --interactive-bg-primary-hover: #fffc;
+  --interactive-bg-primary-press: #ffffffe5;
+  --interactive-bg-primary-inactive: #fff;
+  --interactive-bg-primary-selected: #fff;
+  --interactive-bg-secondary-default: #fff0;
+  --interactive-bg-secondary-hover: #ffffff1a;
+  --interactive-bg-secondary-press: #ffffff0d;
+  --interactive-bg-secondary-inactive: #fff0;
+  --interactive-bg-secondary-selected: #ffffff1a;
+  --interactive-bg-tertiary-default: #212121;
+  --interactive-bg-tertiary-hover: #181818;
+  --interactive-bg-tertiary-press: #0d0d0d;
+  --interactive-bg-tertiary-inactive: #212121;
+  --interactive-bg-tertiary-selected: #212121;
+  --interactive-bg-accent-default: #013566;
+  --interactive-bg-accent-hover: #003f7a;
+  --interactive-bg-accent-muted-hover: #3b4045;
+  --interactive-bg-accent-press: #004f99;
+  --interactive-bg-accent-muted-press: #40484f;
+  --interactive-bg-accent-inactive: #013566;
+}
+
+* {
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+/* This might be in your App.css or index.css */
+.react-chatbot-kit-chat-input {
+  color: black !important;
+  background-color: #ffffff;
+}
+.react-chatbot-kit-chat-message-container {
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.pop-in {
+  animation: popIn 0.8s ease-out forwards;
+}
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+  background-color: red;
+}
+.slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+/* @keyframes corner {
+  from {
+    clip-path: circle(150px at 0 0);
+    opacity: 0.5;
+  }
+  50% {
+    clip-path: circle(250px at 10% 10%);
+    opacity: 0.8;
+  }
+  to {
+    clip-path: none;
+    opacity: 1;
+  }
+} */
+
+.home-anime {
+  animation: corner 2s ease-in-out forwards;
+}
